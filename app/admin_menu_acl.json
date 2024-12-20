@@ -1,0 +1,18 @@
+{
+  "Dashboard" : "admindashboard",
+  "Music" : "adminMusic",
+  "Merch" : "adminMerch",
+  "Gallery" : "adminGallery",
+  "Upload" : {
+    "Track" : "adminMusic/uploadtrack",
+    "Mix" : "adminMusic/uploadmix",
+    "Album" : "adminMusic/uploadalbum",
+    "Tape" : "adminMusic/uploadtape",
+    "Item" : "adminMerch/uploaditem",
+    "Apparel" : "adminMerch/uploadapparel",
+    "Image" : "adminGallery/upload"
+
+  },
+  "Create User" : "createArtist"
+
+}

@@ -1,0 +1,917 @@
+.header-logo{
+  width: 200px;
+}
+
+.stack-image-block{
+  width: 100%;
+  display: flex;
+  background-color: #c2c3c4;
+  grid-column: 1/3;
+}
+
+.container-fluid{
+  width: 1200px;
+}
+
+.carousel-item.active{
+  display: flex;
+}
+
+.block-center{
+  margin: 0 auto;
+}
+
+.w-10{
+  width: 10%;
+}
+.w-25{
+  width: 25%;
+}
+.w-50{
+  width: 50%;
+}
+
+.red {
+  color: red;
+}
+
+.form-errors{
+  border-radius: 8px;
+  margin: 10px 25px 45px 25px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.form-errors ul.has-errors{
+  padding:10px 15px;
+  border:1px solid #a94442;
+  border-radius:8px;
+}
+
+.form-errors li {
+  list-style: none;
+  font-size: 16px;
+}
+
+.navbar-dark .dropdown-item.active, .navbar-dark .dropdown-item:active {
+  background-color: #343a40;
+}
+
+.products-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.products-wrapper .card{
+  width: 275px;
+  margin: 6px;
+}
+
+.products-wrapper .card .card-img-top{
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+}
+
+.list-price {
+  color: #888;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.products-wrapper .card-title a {
+  color: #000;
+}
+
+.products-wrapper .card-title a:hover {
+  color: #888;
+  text-decoration: none;
+}
+
+.product-details-body{
+  margin: 18px 0;
+  padding: 12px;
+  border: 1px solid #eee;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.product-details-price{
+  color: crimson;
+}
+
+.product-details-label{
+  font-weight: bold;
+}
+
+.product-details-slideshow .carousel-control-prev-icon,
+.product-details-slideshow .carousel-control-next-icon{
+  background: unset;
+  color: #101820;
+  font-size: 32px;
+  text-shadow: 0px 0px 3px #fff;
+}
+
+.back-to-results{
+  color: #101820;
+  font-size: 14px;
+}
+
+.back-to-results:hover, .back-to-results:active{
+  color: #000;
+}
+
+.shopping-cart-item {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  border: 1px solid var(--brown);
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px var(--dark);
+  background-color: var(--mil-green);
+  padding: 12px;
+  margin: 18px 0px
+}
+
+.shopping-cart-item-name {
+  color: var(--dark);
+  font-size: var(--body-heading);
+  margin: 0px 18px;
+  display: flex;
+  align-items: center;
+  flex-grow: 3;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.shopping-cart-item-name a {
+  color: var(--dark);
+  width: 100%;
+  text-decoration: none;
+}
+
+.shopping-cart-item-name p {
+  margin: 12px 0 0 0;
+  font-size: var(--body);
+  color: var(--brown);
+}
+
+.shopping-cart-item-img img{
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  margin-right: 18px;
+}
+
+.shopping-cart-item-qty{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0px 18px;
+}
+
+.shopping-cart-item-qty label {
+  margin-right: 18px;
+  margin-bottom: 0;
+  color: var(--dark);
+}
+
+.shopping-cart-item-qty input {
+  width: 36px;
+  margin: 0px 12px;
+}
+
+.shopping-cart-item-price{
+  font-size: 18px;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.shopping-cart-item-price div{
+  width: 100%;
+}
+
+.shopping-cart-item-price .shipping{
+  color: var(--dark);
+  font-size: 12px;
+}
+
+.shopping-cart-summary {
+  padding: 18px;
+  border: 1px solid var(--brown);
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px var(--dark);
+  margin-top: 18px;
+  background-color: var(--mil-green);
+}
+
+.cart-line-item {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.cart-line-item.grand-total {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.remove-item {
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.remove-item:hover {
+  color: crimson;
+}
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  box-sizing: border-box;
+
+  height: 40px;
+
+  padding: 10px 12px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+/*
+
+  Transfered to front end storytime.css
+
+.cart-preview-item{
+  display: flex;
+  border: 1px solid #f5f5f5;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  padding: 12px;
+  margin: 18px 0px;
+}
+
+.cart-preview-item-img img {
+  height: 75px;
+  width: 75px;
+  object-fit: contain;
+  margin-right: 18px;
+}
+
+.cart-preview-item-info p{
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.cart-preview-item-info p:nth-child(1){
+  font-size: 15px;
+  font-weight: bold;
+} */
+
+li.nav-item.nav-cart {
+  position: relative;
+}
+
+li.nav-item.nav-cart .nav-badge{
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 10px;
+  display: inline-block;
+  border: 2px solid #343a40;
+  border-radius: 50%;
+  padding: 4px;
+  background-color: #ff3300;
+}
+
+.two-column-wrapper{
+  position: relative;
+}
+
+.filters-wrapper{
+  margin-left: -15px;
+  width: 300px;
+  background-color: #fbfbfb;
+  border-right: 1px solid #eaeaea;
+  overflow-x: hidden;
+  position: absolute;
+  top: -48px;
+  bottom: 0px;
+  left: -265px;
+  padding: 60px 50px 18px 18px;
+  transition: left 0.2s ease, padding 0.2s ease;
+  z-index: 2;
+}
+
+.two-column-wrapper.open .filters-wrapper{
+  left: 0px;
+  padding-right: 18px;
+}
+
+.two-column-wrapper #expand-filters{
+  position: absolute;
+  top: -40px;
+  left: -13px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #17a2b8;
+  color: #fff;
+  z-index: 3;
+  transition: left 0.2s ease;
+}
+
+.two-column-wrapper.open #expand-filters{
+  left: 250px;
+}
+
+.two-column-wrapper #expand-filters:hover{
+  cursor: pointer;
+}
+
+.two-column-wrapper .products-wrapper{
+  padding: 28px;
+  padding-left: 40px;
+  transition: padding 0.2s ease;
+}
+
+.two-column-wrapper.open .products-wrapper {
+  padding-left: 340px
+}
+
+/**
+  * Moglee custom css
+  *
+  *
+  */
+
+.page-header{
+  padding: 10px;
+  border-radius:3px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+
+.track-form{
+  display: flex;
+  padding: 10px;
+  border: 1px solid #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.album-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:0px auto;
+  max-width: 600px;
+  /* background-color: #ccf; */
+}
+
+.album-wrapper .album{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 550px;
+  margin: 6px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  /* border:1px solid #fff; */
+}
+
+.album-wrapper .album .album-img{
+  grid-column: 1/4;
+  height: auto;
+  width: 300px;
+  margin: 10px;
+  object-fit: contain;
+}
+
+.album-wrapper .album-body{
+  margin: 0 auto;
+  padding: 12px;
+  border: 1px solid #eee;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  grid-row: 7 / 12;
+  max-width: 600px;
+  text-align: center;
+}
+.album-wrapper .album-body:hover{
+  padding:17px 12px;
+}
+
+.album-wrapper .album-body-link{
+  text-decoration: none;
+  color:#333;
+}
+
+.album-wrapper .album-body-link:hover{
+  text-decoration: none;
+  color:#000;
+
+}
+
+.album-wrapper .album .album-column{
+  grid-column: 3fr;
+  display: block;
+  margin:auto 0;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.album-wrapper .album .album-audio{
+  width: 200px;
+  margin: 10px;
+  object-fit: contain;
+}
+
+.album-wrapper .album-title{
+  display: flex;
+  justify-content: center;
+  width: 150px;
+}
+
+.album-wrapper .album-title a {
+  color: #000;
+}
+
+.album-wrapper .album-title a:hover {
+  color: #888;
+  text-decoration: none;
+}
+
+.media-chart-image{
+  max-width:100px;
+}
+
+.media-name{
+  text-decoration: none;
+  color: #333;
+}
+
+.media-name:hover{
+  color: #111;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  box-sizing: border-box;
+
+  height: 40px;
+
+  padding: 10px 12px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.cart-preview-item{
+  display: flex;
+  border: 1px solid #f5f5f5;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  padding: 12px;
+  margin: 18px 0px;
+}
+
+.cart-preview-item-img img {
+  height: 75px;
+  width: 75px;
+  object-fit: contain;
+  margin-right: 18px;
+}
+
+.cart-preview-item-info p{
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.cart-preview-item-info p:nth-child(1){
+  font-size: 15px;
+  font-weight: bold;
+}
+
+li.nav-item.nav-cart {
+  position: relative;
+}
+
+li.nav-item.nav-cart .nav-badge{
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 10px;
+  display: inline-block;
+  border: 2px solid #343a40;
+  border-radius: 50%;
+  padding: 4px;
+  background-color: #ff3300;
+}
+
+.two-column-wrapper{
+  position: relative;
+}
+
+.filters-wrapper{
+  margin-left: -15px;
+  width: 300px;
+  background-color: #fbfbfb;
+  border-right: 1px solid #eaeaea;
+  overflow-x: hidden;
+  position: absolute;
+  top: -48px;
+  bottom: 0px;
+  left: -265px;
+  padding: 60px 50px 18px 18px;
+  transition: left 0.2s ease, padding 0.2s ease;
+  z-index: 2;
+}
+
+.two-column-wrapper.open .filters-wrapper{
+  left: 0px;
+  padding-right: 18px;
+}
+
+.two-column-wrapper #expand-filters{
+  position: absolute;
+  top: -40px;
+  left: -13px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #17a2b8;
+  color: #fff;
+  z-index: 3;
+  transition: left 0.2s ease;
+}
+
+.two-column-wrapper.open #expand-filters{
+  left: 250px;
+}
+
+.two-column-wrapper #expand-filters:hover{
+  cursor: pointer;
+}
+
+.two-column-wrapper .products-wrapper{
+  padding: 28px;
+  padding-left: 40px;
+  transition: padding 0.2s ease;
+}
+
+.two-column-wrapper.open .products-wrapper {
+  padding-left: 340px
+}
+
+/* MOGLEE CSS */
+.album-details-button{
+  width: 300px;
+  display: block;
+  margin: 2px auto;
+}
+
+.album-image-background{
+  background-color: #eee;
+  max-width: 600px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.album-details-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: center;
+  margin:0px auto;
+  padding: 50px 0;
+  background-color: #cdcaba;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+.left-details-container{
+  grid-row: 1 /2;
+  grid-column: 1 / 2;
+}
+.right-details-container{
+  grid-row: 1 /2;
+  grid-column: 2 / 3;
+}
+
+.moglee-modal-header{
+  align-self:left;
+}
+
+.album-details-name{
+  font-size: 33px;
+  text-align: center;
+}
+.album-details-price{
+  font-size: 28px;
+  text-align: center;
+  font-weight: bolder;
+  color: #6a9143;
+}
+.album-details-image{
+  height: auto;
+
+  max-width: 400px;
+  display:block;
+  margin: 0 auto;
+}
+
+.album-details-body{
+  display:flex;
+  margin: 10px auto;
+  padding: 12px;
+  border: 1px solid #eee;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  max-width: 600px;
+  text-align: center;
+  background-color:#ddd;
+}
+
+.album-details-player{
+  display:block;
+  /* box-shadow: 2px 2px 6px rgba(0,0,0,0.2); */
+  margin: 5px auto;
+  width: 360px;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+
+/* .player {
+    background: transparent url("../images/player6.png") no-repeat scroll center top;
+    height: 132px;
+    position: relative;
+    width: 360px;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+
+.title{
+    font-family: verdana;
+    left: 133px;
+    position: absolute;
+    color:#eee;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.controls {
+    cursor: pointer;
+    height: 56px;
+    left: 135px;
+    position: absolute;
+    top: 33px;
+    width: 138px;
+}
+.controls .play, .controls .pause, .controls .rew, .controls .fwd {
+    background: transparent url("../images/player6.png") no-repeat scroll 0 0;
+    float: left;
+    height: 100%;
+    width: 33%;
+    padding:10px;
+}
+.controls .play {
+    background-position: -113px -154px;
+}
+.controls .pause {
+    background-position: -168px -154px;
+    display: none;
+}
+.controls .rew {
+    background-position: -4px -154px;
+}
+.controls .fwd {
+    background-position: -78px -154px;
+}
+.controls .play:hover {
+    background-position: -113px -152px;
+}
+.controls .pause:hover {
+    background-position: -168px -152px;
+}
+.controls .rew:hover {
+    background-position: -4px -152px;
+}
+.controls .fwd:hover {
+    background-position: -78px -152px;
+}
+.pl {
+    background: transparent url("../images/player6.png") no-repeat scroll -233px -146px;
+    cursor: pointer;
+    height: 50px;
+    left: 310px;
+    position: absolute;
+    top: 24px;
+    width: 40px;
+}
+.pl:hover {
+    top: 26px;
+}
+
+
+.cover {
+    background-size: 106px;
+    height: 106px;
+    position: absolute;
+    top: 25px;
+    width: 106px;
+}
+
+
+.hidden {
+    display: none;
+}
+.controls .visible {
+    display: block;
+}
+.playlist {
+    background-color: #333333;
+    border-radius: 5px 5px 5px 5px;
+    list-style-type: none;
+    margin: -3px 0 0 0px;
+    padding-bottom: 10px;
+    padding-top: 22px;
+    position: relative;
+    width: 360px;
+    z-index: 1;
+}
+.playlist li {
+    color: #EEEEEE;
+    cursor: pointer;
+    margin: 0 0 20px 40px;
+    font-size: 18px;
+}
+.playlist li.active {
+    font-weight: bold;
+}
+.tracker {
+    height: 15px;
+    left: 120px;
+    position: absolute;
+    top: 106px;
+    width: 220px;
+    background-color: #ccd;
+    border-radius: 5px;
+}
+
+.ui-slider-range {
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.ui-slider-handle {
+    background: transparent url("../images/player6.png") no-repeat scroll -273px -173px;
+    cursor: pointer;
+    height: 25px;
+    position: absolute;
+    width: 10px;
+}
+
+.current-time{
+  font-family: verdana;
+  left: 123px;
+  top: 80px;
+  position: absolute;
+  color:#eee;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.max-time{
+  font-family: verdana;
+  left: 293px;
+  top: 80px;
+  position: absolute;
+  color:#eee;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+ */
+
+
+
+
+
+.album-container{
+  display: grid;
+  grid-template-columns: 600px;
+  grid-template-rows: repeat(10, 1fr);
+  margin:0px auto;
+  padding-top: 50px;
+  max-width: 600px;
+}
+.album-index-header{
+  text-align: center;
+  padding: 22px;
+}
+
+.album-index-name{
+  grid-row: 1 / 2;
+  text-align: center;
+}
+.album-index-image{
+  height: auto;
+  width: 200px;
+  margin: 0 auto;
+  display:block;
+  align-self: center;
+  grid-row: 2 / 4;
+}
+
+/* .album-index-body{
+  margin: 18px 0;
+  padding: 12px;
+  border: 1px solid #eee;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  grid-row: 8 / 12;
+} */
+
+.album-index-container{
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin:0px auto;
+  padding-top: 50px;
+  max-width: 300px;
+  max-height:400px;
+}
+
+.album-index-grid{
+  display:grid;
+  grid-template-rows: 500px;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-album-btn{
+  display:block;
+  margin: 5px auto;
+}
+
+.btn-download{
+  display:block;
+  margin: 1px auto;
+}

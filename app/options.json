@@ -1,0 +1,14 @@
+{
+  "apparel" : {"womens" : {"xs" : "womens_xs",
+                          "s" : "womens_s",
+                          "m" : "womens_m",
+                          "l" : "womens_l",
+                          "xl" : "womens_xl",
+                          "xxl" : "womens_xxl"},
+              "mens" : {"xs" : "mens_xs",
+                          "s" : "mens_s",
+                          "m" : "mens_m",
+                          "l" : "mens_l",
+                          "xl" : "mens_xl",
+                          "xxl" : "mens_xxl"}}
+}

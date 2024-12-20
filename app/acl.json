@@ -1,0 +1,43 @@
+{
+  "Guest" : {
+    "denied" : {
+      "Logout" : ["*"]
+    },
+    "Home" : ["*"],
+    "Music" : ["*"],
+    "Merch" : ["*"],
+    "Gallery" : ["*"],
+    "Donate" : ["*"],
+    "Cart" : ["*"],
+    "Login" : ["*"],
+    "Restricted" : ["*"]
+  },
+  "LoggedIn" : {
+    "denied" : {
+      "Login" : ["*"]
+    },
+    "Logout" : ["*"]
+  },
+  "Artist" : {
+    "denied" : {
+      "Login" : ["*"]
+    },
+
+    "Admindashboard" : ["*"],
+    "AdminMusic" : ["*"],
+    "AdminMerch" : ["*"],
+    "AdminGallery" : ["*"],
+    "Adminproducts" : ["*"],
+    "Logout" : ["*"]
+  },
+  "SuperAdmin" : {
+    "denied" : {
+      "Login" : ["*"]
+    },
+
+    "Admindashboard" : ["*"],
+    "Adminproducts" : ["*"],
+    "CreateArtist" : ["*"],
+    "Logout" : ["*"]
+  }
+}
